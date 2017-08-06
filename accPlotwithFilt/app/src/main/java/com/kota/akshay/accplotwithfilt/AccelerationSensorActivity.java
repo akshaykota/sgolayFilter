@@ -18,6 +18,17 @@ import java.util.*;
 
 import flanagan.analysis.CurveSmooth;
 
+/*
+ Class for plotting acceleration data in real time.
+ Using androidplot library for plotting and Michael
+ Flanagan's library for Savitzky-Golay Filtering
+ of accelerometer data.
+
+ Androidplot link ==> https://github.com/halfhp/androidplot
+ Flanagan's Library ==> https://www.ee.ucl.ac.uk/~mflanaga/java/
+
+ Implemented : Akshay K A (17EE64R19)
+ */
 public class AccelerationSensorActivity extends Activity implements SensorEventListener
 {
     private static final int HISTORY_SIZE = 500;
